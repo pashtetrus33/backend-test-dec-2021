@@ -1,44 +1,25 @@
 package com.geekbrains.backend.test.imgur;
-
 import java.util.Properties;
-
-import com.geekbrains.backend.test.FunctionalTest;
-import io.restassured.RestAssured;
-import io.restassured.response.Response;
 import org.junit.jupiter.api.*;
-
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.is;
 
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
+public class ImgurApiFunctionalTest extends ImgurApiAbstractTest  {
 
-public class ImgurApiFunctionalTest extends FunctionalTest {
-
-
-    private static Properties properties;
-    private static String TOKEN;
-    private static String imageHash;
-    private static String imageHashForFavorite;
-
-
-    @BeforeAll
-    static void beforeAll() throws Exception {
-        properties = readProperties();
-        RestAssured.baseURI = properties.getProperty("imgur-api-url");
-        TOKEN = properties.getProperty("imgur-api-token");
-        imageHashForFavorite = properties.getProperty("imageHashForFavorite");
-
-    }
+    private static String CURRENT_IMAGE_ID;
 
     @Test
+    @Order(1)
     @DisplayName("Тест запроса информации об аккаунте")
     void getAccountBaseTest() {
         String userName = "pashtetrus";
         given()
-                .auth()
-                .oauth2(TOKEN)
+                .spec(requestSpecification)
                 .log()
                 .all()
                 .expect()
+                .spec(responseSpecification)
                 .body("data.id", is(157777337))
                 .log()
                 .all()
@@ -47,11 +28,11 @@ public class ImgurApiFunctionalTest extends FunctionalTest {
     }
 
     @Test
+    @Order(2)
     @DisplayName("Тест загрузки изображения")
     void postImageTest() {
-        Response response = RestAssured.given()
-                .auth()
-                .oauth2(TOKEN)
+        CURRENT_IMAGE_ID = given()
+                .spec(requestSpecification)
                 .multiPart("image", getFileResource("img.jpg"))
                 .formParam("name", "MyCoolPicture")
                 .formParam("title", "Very nice picture!")
@@ -65,90 +46,79 @@ public class ImgurApiFunctionalTest extends FunctionalTest {
                 .log()
                 .all()
                 .when()
-                .post("upload");
-
-        //Вытаскиваем из ответа id и записываем в строковую переменную imageHash
-        String resString = response.asString();
-        String[] resultStr = resString.split("\"");
-        imageHash = resultStr[9].trim();
+                .post("upload")
+                .body()
+                .jsonPath()
+                .getString("data.id");
 
     }
 
-    // TODO: 08.12.2021 Домашка протестировать через RA минимум 5 различных end point-ов
     @Test
+    @Order(3)
     @DisplayName("Тест добавления изображения в Favourites (избранное)")
     void favoriteAnImageTest() {
         given()
-                .auth()
-                .oauth2(TOKEN)
+                .spec(requestSpecification)
                 .log()
                 .all()
                 .expect()
-                .body("success", is(true))
-                .body("status", is(200))
+                .spec(responseSpecification)
                 .log()
                 .all()
                 .when()
-                .post("image/" + imageHashForFavorite + "/favorite");
+                .post("image/" + CURRENT_IMAGE_ID + "/favorite");
     }
 
     @Test
+    @Order(4)
     @DisplayName("Тест изменения title и description изображения")
     void updateImageInformationTest() {
         given()
-                .auth()
-                .oauth2(TOKEN)
+                .spec(requestSpecification)
                 .formParam("title", "New Title")
                 .formParam("description", "New description!")
                 .log()
                 .all()
                 .expect()
-                .header("Content-Type", "application/json")
+                .spec(responseSpecification)
                 .header("server", "nginx")
                 .body("data", is(true))
-                .body("success", is(true))
-                .body("status", is(200))
                 .log()
                 .all()
                 .when()
-                .post("image/" + imageHash);
+                .post("image/" + CURRENT_IMAGE_ID);
     }
 
     @Test
+    @Order(5)
     @DisplayName("Тест удаления изображения")
     void imageDeletionTest() {
         given()
-                .auth()
-                .oauth2(TOKEN)
+                .spec(requestSpecification)
                 .log()
                 .all()
                 .expect()
-                .header("Content-Type", "application/json")
+                .spec(responseSpecification)
                 .header("server", "cat factory 1.0")
                 .body("data", is(true))
-                .body("success", is(true))
-                .body("status", is(200))
                 .log()
                 .all()
                 .when()
-                .delete("image/" + imageHash);
+                .delete("image/" + CURRENT_IMAGE_ID);
     }
 
     @Test
     @DisplayName("Тест создания комментария")
     void commentCreationTest() {
         given()
-                .auth()
-                .oauth2(TOKEN)
-                .formParam("image_id", imageHashForFavorite)
+                .spec(requestSpecification)
+                .formParam("image_id", "8xGCvWR")
                 .formParam("comment", "This is my first comment :)")
                 .log()
                 .all()
                 .expect()
+                .spec(responseSpecification)
                 .header("server", "cat factory 1.0")
-                .body("data.error", is("Error saving comment."))
-                .body("data.request", is("/3/comment"))
-                .body("data.method", is("POST"))
                 .log()
                 .all()
                 .when()
@@ -160,12 +130,11 @@ public class ImgurApiFunctionalTest extends FunctionalTest {
     void getAccountImagesTest() {
         String userName = "pashtetrus";
         given()
-                .auth()
-                .oauth2(TOKEN)
+                .spec(requestSpecification)
                 .log()
                 .all()
                 .expect()
-                .header("Content-Type", "application/json")
+                .spec(responseSpecification)
                 .body("data[0].type", is("image/jpeg"))
                 .body("data[1].has_sound", is(false))
                 .log()
@@ -178,18 +147,16 @@ public class ImgurApiFunctionalTest extends FunctionalTest {
     void verifyUsersEmailTest() {
         String userName = "pashtetrus";
         given()
-                .auth()
-                .oauth2(TOKEN)
+                .spec(requestSpecification)
                 .log()
                 .all()
                 .expect()
-                .header("Content-Type", "application/json")
+                .spec(responseSpecification)
                 .body("data", is(false))
-                .body("success", is(true))
-                .body("status", is(200))
                 .log()
                 .all()
                 .when()
                 .get("account/" + userName + "/verifyemail");
     }
+
 }
