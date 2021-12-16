@@ -40,7 +40,7 @@ public class ImgurApiAbstractTest extends FunctionalTest {
         try {
             responseSpecification = new ResponseSpecBuilder()
                     .expectStatusCode(200)
-                    .expectResponseTime(Matchers.lessThan(2000L))
+                    .expectResponseTime(Matchers.lessThan(4000L))
                     .expectContentType("application/json")
                     .expectBody("status", is(200))
                     .expectBody("success", is(true))
