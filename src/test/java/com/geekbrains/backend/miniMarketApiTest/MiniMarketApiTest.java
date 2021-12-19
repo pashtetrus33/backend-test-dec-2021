@@ -31,9 +31,10 @@ public class MiniMarketApiTest {
     static void beforeAll() {
         apiService = new MiniMarketApiService();
         gson = new Gson();
+
     }
 
-    @DisplayName("Тест на получение существующей категории по id")
+    @DisplayName("Тест на получение существующей кат по id")
     @Test
     void testGetCategoryById() throws IOException {
         Category category = apiService.getCategory(2);
