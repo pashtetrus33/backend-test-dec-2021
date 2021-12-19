@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="mini-market" uuid="432e1f86-8962-4aaa-b257-c1f58d0e23bb">
+    <data-source source="LOCAL" name="mini-market" uuid="dac18f9e-2015-4b81-a51d-d9bd502f5d44">
       <driver-ref>h2.unified</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.h2.Driver</jdbc-driver>
