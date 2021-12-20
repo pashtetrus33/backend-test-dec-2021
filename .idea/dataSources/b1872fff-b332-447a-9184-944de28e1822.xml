@@ -176,17 +176,17 @@
       <Admin>1</Admin>
       <ObjectId>2</ObjectId>
     </user>
-    <sequence id="164" parent="162" name="SYSTEM_SEQUENCE_19E8C040_D2AB_4BCA_80A8_452295AF2518">
-      <AutoCreated>1</AutoCreated>
-      <NameSurrogate>1</NameSurrogate>
-      <ObjectId>8</ObjectId>
-      <SequenceIdentity>null(6)</SequenceIdentity>
-    </sequence>
-    <sequence id="165" parent="162" name="SYSTEM_SEQUENCE_53DA9731_9A16_4E79_88AC_298F981EFC25">
+    <sequence id="164" parent="162" name="SYSTEM_SEQUENCE_3C079D28_65CF_477B_8559_D70FE5DBFF4A">
       <AutoCreated>1</AutoCreated>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>4</ObjectId>
-      <SequenceIdentity>null(3)</SequenceIdentity>
+      <SequenceIdentity>null(7)</SequenceIdentity>
+    </sequence>
+    <sequence id="165" parent="162" name="SYSTEM_SEQUENCE_AB4245E6_C432_4B51_A70B_2A3E19A17D9F">
+      <AutoCreated>1</AutoCreated>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>8</ObjectId>
+      <SequenceIdentity>null(7)</SequenceIdentity>
     </sequence>
     <table id="166" parent="162" name="CATEGORIES">
       <ObjectId>3</ObjectId>
@@ -198,7 +198,7 @@
       <DataType>BIGINT|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>null(3)</SequenceIdentity>
+      <SequenceIdentity>null(7)</SequenceIdentity>
     </column>
     <column id="169" parent="166" name="TITLE">
       <DataType>VARCHAR(255)|0s</DataType>
@@ -221,7 +221,7 @@
       <DataType>BIGINT|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>null(6)</SequenceIdentity>
+      <SequenceIdentity>null(7)</SequenceIdentity>
     </column>
     <column id="173" parent="167" name="TITLE">
       <DataType>VARCHAR(255)|0s</DataType>

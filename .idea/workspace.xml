@@ -7,14 +7,16 @@
     <list default="true" id="56159ec7-0b4e-442a-8474-0f5ae7651a47" name="Changes" comment="Bakanov Pavel homeWork6">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/432e1f86-8962-4aaa-b257-c1f58d0e23bb.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/432e1f86-8962-4aaa-b257-c1f58d0e23bb/storage_v2/_src_/database/MINI-MARKET.cpZiEQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/432e1f86-8962-4aaa-b257-c1f58d0e23bb/storage_v2/_src_/database/MINI-MARKET.cpZiEQ/schema/INFORMATION_SCHEMA.NBgcMw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/432e1f86-8962-4aaa-b257-c1f58d0e23bb/storage_v2/_src_/database/MINI-MARKET.cpZiEQ/schema/PUBLIC.aaZQjQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/432e1f86-8962-4aaa-b257-c1f58d0e23bb/storage_v2/_src_/database/MINI-MARKET.cpZiEQ/schema/PUBLIC.aaZQjQ.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dac18f9e-2015-4b81-a51d-d9bd502f5d44.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dac18f9e-2015-4b81-a51d-d9bd502f5d44/storage_v2/_src_/database/MINI-MARKET.cpZiEQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dac18f9e-2015-4b81-a51d-d9bd502f5d44/storage_v2/_src_/database/MINI-MARKET.cpZiEQ/schema/INFORMATION_SCHEMA.NBgcMw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dac18f9e-2015-4b81-a51d-d9bd502f5d44/storage_v2/_src_/database/MINI-MARKET.cpZiEQ/schema/PUBLIC.aaZQjQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dac18f9e-2015-4b81-a51d-d9bd502f5d44/storage_v2/_src_/database/MINI-MARKET.cpZiEQ/schema/PUBLIC.aaZQjQ.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mini-market.mv.db" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/mini-market.trace.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrains/backend/db/DbService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrains/backend/db/DbService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrains/backend/db/TestDb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrains/backend/db/TestDb.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrains/db/dao/CategoriesMapper.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrains/db/dao/ProductsMapper.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrains/db/mapper/xml/CategoriesMapper.xml" beforeDir="false" />
@@ -23,6 +25,8 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrains/db/model/CategoriesExample.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrains/db/model/Products.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrains/db/model/ProductsExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +183,11 @@
       <workItem from="1639943931020" duration="583000" />
       <workItem from="1639944799317" duration="238000" />
       <workItem from="1639945170310" duration="2873000" />
-      <workItem from="1639952251561" duration="274000" />
+      <workItem from="1639952251561" duration="795000" />
+      <workItem from="1639953401682" duration="157000" />
+      <workItem from="1639956331867" duration="6222000" />
+      <workItem from="1639962895888" duration="146000" />
+      <workItem from="1640022677696" duration="1161000" />
     </task>
     <task id="LOCAL-00001" summary="Bakanov Pavel homeWork3">
       <created>1639174744347</created>
@@ -209,7 +217,21 @@
       <option name="project" value="LOCAL" />
       <updated>1639949477697</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Bakanov Pavel homeWork6">
+      <created>1639952763049</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1639952763049</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Bakanov Pavel homeWork6">
+      <created>1639952795348</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1639952795348</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

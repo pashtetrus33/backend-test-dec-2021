@@ -19,15 +19,17 @@ public class DbService {
         openSession();
         categoriesMapper = session.getMapper(CategoriesMapper.class);
         productsMapper = session.getMapper(ProductsMapper.class);
+
     }
 
     public void openSession() {
         session = sessionFactory.openSession();
     }
-
-    public void closeSession() {
-        session.close();
+    public void commitSession() {
+        session.commit();
     }
+    public void closeSession() { session.close();   }
+
 
     public CategoriesMapper getCategoriesMapper() {
         return categoriesMapper;
@@ -36,6 +38,7 @@ public class DbService {
     public ProductsMapper getProductsMapper() {
         return productsMapper;
     }
+
 
 }
 
