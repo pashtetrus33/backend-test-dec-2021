@@ -4,11 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56159ec7-0b4e-442a-8474-0f5ae7651a47" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$USER_HOME$/arcadia/market/vendors/cs-billing/vendor-core/src/java/ru/yandex/vendor/category/CategoryFilter.java" beforeDir="false" afterPath="$USER_HOME$/arcadia/market/vendors/cs-billing/vendor-core/src/java/ru/yandex/vendor/category/CategoryFilter.java" afterDir="false" />
-      <change beforePath="$USER_HOME$/arcadia/market/vendors/cs-billing/vendor-core/src/java/ru/yandex/vendor/category/CategoryService.java" beforeDir="false" afterPath="$USER_HOME$/arcadia/market/vendors/cs-billing/vendor-core/src/java/ru/yandex/vendor/category/CategoryService.java" afterDir="false" />
-      <change beforePath="$USER_HOME$/arcadia/market/vendors/cs-billing/vendor-partner/src/java/ru/yandex/market/vendor/controllers/CategoryController.java" beforeDir="false" afterPath="$USER_HOME$/arcadia/market/vendors/cs-billing/vendor-partner/src/java/ru/yandex/market/vendor/controllers/CategoryController.java" afterDir="false" />
+    <list default="true" id="56159ec7-0b4e-442a-8474-0f5ae7651a47" name="Changes" comment="Bakanov Pavel homeWork6">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dac18f9e-2015-4b81-a51d-d9bd502f5d44.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dac18f9e-2015-4b81-a51d-d9bd502f5d44/storage_v2/_src_/database/MINI-MARKET.cpZiEQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dac18f9e-2015-4b81-a51d-d9bd502f5d44/storage_v2/_src_/database/MINI-MARKET.cpZiEQ/schema/INFORMATION_SCHEMA.NBgcMw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dac18f9e-2015-4b81-a51d-d9bd502f5d44/storage_v2/_src_/database/MINI-MARKET.cpZiEQ/schema/PUBLIC.aaZQjQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dac18f9e-2015-4b81-a51d-d9bd502f5d44/storage_v2/_src_/database/MINI-MARKET.cpZiEQ/schema/PUBLIC.aaZQjQ.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini-market.mv.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini-market.trace.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrains/backend/db/DbService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrains/backend/db/DbService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrains/backend/db/TestDb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrains/backend/db/TestDb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrains/db/dao/CategoriesMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrains/db/dao/ProductsMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrains/db/mapper/xml/CategoriesMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrains/db/mapper/xml/ProductsMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrains/db/model/Categories.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrains/db/model/CategoriesExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrains/db/model/Products.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrains/db/model/ProductsExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,11 +40,17 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="DZ4" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -39,18 +63,24 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/com/geekbrains/backend/test/ImgurApiFunctionalTest" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/geekbrains/backend/test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mini-market.mv.db" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="database.data.views" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -66,7 +96,41 @@
       <recent name="com.geekbrains.backend.test" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ImgurApiFunctionalTest.postImageTest">
+  <component name="RunManager" selected="Application.TestDb">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.geekbrains.backend.retrofit.Test" />
+      <module name="backend-test-dec-2021" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.geekbrains.backend.retrofit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestDb" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.geekbrains.backend.db.TestDb" />
+      <module name="backend-test-dec-2021" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.geekbrains.backend.db.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in backend-test-dec-2021 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="backend-test-dec-2021" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="All in backend-test-dec-2021" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="backend-test-dec-2021" />
       <option name="PACKAGE_NAME" value="" />
@@ -75,64 +139,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HelloTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MiniMarketApiTest.testGetProductById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="backend-test-dec-2021" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.geekbrains.backend.test.*" />
+          <option name="PATTERN" value="com.geekbrains.backend.miniMarketApiTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.geekbrains.backend.test" />
-      <option name="MAIN_CLASS_NAME" value="com.geekbrains.backend.test.HelloTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HelloTest.testWithResource" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="backend-test-dec-2021" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.geekbrains.backend.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.geekbrains.backend.test" />
-      <option name="MAIN_CLASS_NAME" value="com.geekbrains.backend.test.HelloTest" />
-      <option name="METHOD_NAME" value="testWithResource" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ImgurApiFunctionalTest.getAccountBase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="backend-test-dec-2021" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.geekbrains.backend.test.imgur.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.geekbrains.backend.test.imgur" />
-      <option name="MAIN_CLASS_NAME" value="com.geekbrains.backend.test.imgur.ImgurApiFunctionalTest" />
-      <option name="METHOD_NAME" value="getAccountBase" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ImgurApiFunctionalTest.postImageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="backend-test-dec-2021" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.geekbrains.backend.test.imgur.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.geekbrains.backend.test.imgur" />
-      <option name="MAIN_CLASS_NAME" value="com.geekbrains.backend.test.imgur.ImgurApiFunctionalTest" />
-      <option name="METHOD_NAME" value="postImageTest" />
+      <option name="PACKAGE_NAME" value="com.geekbrains.backend.miniMarketApiTest" />
+      <option name="MAIN_CLASS_NAME" value="com.geekbrains.backend.miniMarketApiTest.MiniMarketApiTest" />
+      <option name="METHOD_NAME" value="testGetProductById" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -140,11 +157,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ImgurApiFunctionalTest.postImageTest" />
-        <item itemvalue="JUnit.ImgurApiFunctionalTest.getAccountBase" />
-        <item itemvalue="JUnit.HelloTest.testWithResource" />
+        <item itemvalue="Application.TestDb" />
+        <item itemvalue="JUnit.All in backend-test-dec-2021 (1)" />
         <item itemvalue="JUnit.All in backend-test-dec-2021" />
-        <item itemvalue="JUnit.HelloTest" />
+        <item itemvalue="JUnit.MiniMarketApiTest.testGetProductById" />
+        <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -160,10 +177,81 @@
       <option name="presentableId" value="Default" />
       <updated>1638984204059</updated>
       <workItem from="1638984205449" duration="6562000" />
+      <workItem from="1639923648855" duration="7373000" />
+      <workItem from="1639937418283" duration="2707000" />
+      <workItem from="1639941300660" duration="2356000" />
+      <workItem from="1639943931020" duration="583000" />
+      <workItem from="1639944799317" duration="238000" />
+      <workItem from="1639945170310" duration="2873000" />
+      <workItem from="1639952251561" duration="795000" />
+      <workItem from="1639953401682" duration="157000" />
+      <workItem from="1639956331867" duration="6222000" />
+      <workItem from="1639962895888" duration="146000" />
+      <workItem from="1640022677696" duration="1161000" />
     </task>
+    <task id="LOCAL-00001" summary="Bakanov Pavel homeWork3">
+      <created>1639174744347</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1639174744347</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Bakanov Pavel homeWork4">
+      <created>1639332978042</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1639332978042</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Bakanov Pavel homeWork6">
+      <created>1639949336691</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1639949336691</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Bakanov Pavel homeWork6">
+      <created>1639949477697</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1639949477697</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Bakanov Pavel homeWork6">
+      <created>1639952763049</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1639952763049</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Bakanov Pavel homeWork6">
+      <created>1639952795348</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1639952795348</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Bakanov Pavel homeWork3" />
+    <MESSAGE value="Bakanov Pavel homeWork4" />
+    <MESSAGE value="Bakanov Pavel homeWork6" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bakanov Pavel homeWork6" />
   </component>
 </project>
