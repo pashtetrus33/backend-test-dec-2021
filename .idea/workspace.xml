@@ -6,10 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="56159ec7-0b4e-442a-8474-0f5ae7651a47" name="Changes" comment="Bakanov Pavel homeWork6">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mini-market.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/mini-market.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrains/backend/db/TestDb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrains/backend/db/TestDb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/geekbrains/backend/test/HelloTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/geekbrains/backend/test/HelloTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/geekbrains/backend/miniMarketApiTest/MiniMarketApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/geekbrains/backend/miniMarketApiTest/MiniMarketApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/geekbrains/backend/test/imgur/ImgurApiFunctionalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/geekbrains/backend/test/imgur/ImgurApiFunctionalTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

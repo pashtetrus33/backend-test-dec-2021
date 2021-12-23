@@ -40,11 +40,11 @@ public class MiniMarketApiTest {
         Assertions.assertEquals(2L, category.getId());
         Assertions.assertEquals(4L, category.getProducts().get(0).getId());
         Assertions.assertEquals("Samsung Watch X1000", category.getProducts().get(0).getTitle());
-        Assertions.assertEquals(20000, category.getProducts().get(0).getPrice());
+        Assertions.assertEquals(20700, category.getProducts().get(0).getPrice());
         Assertions.assertEquals("Electronic", category.getProducts().get(0).getCategoryTitle());
-        Assertions.assertEquals(5L, category.getProducts().get(1).getId());
-        Assertions.assertEquals("LG TV 1", category.getProducts().get(1).getTitle());
-        Assertions.assertEquals(50000, category.getProducts().get(1).getPrice());
+        Assertions.assertEquals(115L, category.getProducts().get(1).getId());
+        Assertions.assertEquals("Vacuum cleaner Bosh MX30", category.getProducts().get(1).getTitle());
+        Assertions.assertEquals(23000, category.getProducts().get(1).getPrice());
         Assertions.assertEquals("Electronic", category.getProducts().get(1).getCategoryTitle());
         Assertions.assertEquals("Electronic", category.getTitle());
     }
@@ -112,7 +112,7 @@ public class MiniMarketApiTest {
     @Test
     void testGetProductByNonExistentId() throws IOException {
         Assertions.assertThrows(RuntimeException.class, () -> {
-            Product product = apiService.getProduct(100);
+            Product product = apiService.getProduct(10000);
         });
     }
 
