@@ -35,12 +35,12 @@ class HelloTest extends FunctionalTest {
 
 
     // value check
-    @ParameterizedTest(name = "Тест {index}: {0} + {1} = {2}")
+    /*@ParameterizedTest(name = "Тест {index}: {0} + {1} = {2}")
     @MethodSource("paramsForSum")
     @DisplayName("Тест суммы двух чисел")
     void testFooWithParams(int a, int b, int expected) {
         assertEquals(expected, hello.sum(a, b));
-    }
+    }*/
 
     // exception check
     @Test

@@ -9,6 +9,7 @@ import com.geekbrains.db.model.Categories;
 import com.geekbrains.db.model.CategoriesExample;
 import com.geekbrains.db.model.Products;
 import com.geekbrains.db.model.ProductsExample;
+import org.apache.ibatis.javassist.runtime.Desc;
 
 public class TestDb {
 
@@ -112,8 +113,8 @@ public class TestDb {
 
         // 4 Задание.Вывести топ 3 самых дорогих продукта
 
-                Collections.sort(products);
-        for (int i=0; i<3; i++){
+        Collections.sort(products);
+       for (int i=0; i<3; i++){
             System.out.println("Cамый дорогой продукт № " + (i+1) + ":");
             System.out.println(products.get(i));
         }
